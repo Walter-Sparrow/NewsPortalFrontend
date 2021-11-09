@@ -1,8 +1,4 @@
-# DataArt Java School 2021
-
-## FirstNews frontend
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# FirstNews frontend | DataArt Java School 2021
 
 ## Available Scripts
 
