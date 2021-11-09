@@ -1,0 +1,56 @@
+:root {
+  --card-width: 360px;
+  --card-height: 200px;
+}
+
+.newsCard {
+  width: var(--card-width);
+  height: var(--card-height);
+}
+
+.wrapper {
+  transition: all 0.2s;
+  background-color: #f6f6f8;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.icon {
+  transition: all 0.2s;
+  margin: 40px 0;
+  width: 64px;
+  height: 64px;
+}
+
+.titleHolder {
+  transition: all 0.2s;
+  padding: 5px 15px;
+  background-color: #c60820;
+  width: 100%;
+  border-radius: 0 0 20px 20px;
+}
+
+.title {
+  transition: all 0.2s;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  color: #f6f6f8;
+}
+
+.wrapper:hover {
+  background-color: #c60820;
+  cursor: pointer;
+}
+
+.wrapper:hover > .titleHolder {
+  background-color: #f6f6f8;
+}
+
+.wrapper:hover .title {
+  color: black;
+}
+
+.wrapper:hover > .icon {
+  fill: #f6f6f8;
+}

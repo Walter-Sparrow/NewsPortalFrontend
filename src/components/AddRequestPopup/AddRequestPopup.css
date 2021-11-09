@@ -1,0 +1,73 @@
+:root {
+  --max-width: 1200px;
+}
+
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.3);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popupInner {
+  position: relative;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  border: 2px #c60820;
+  border-radius: 10px;
+  background-color: #e3e3e3;
+  color: #000;
+  padding: 2rem;
+  max-width: var(--max-width);
+}
+
+.popupInner > button {
+  position: absolute;
+  cursor: pointer;
+  outline: transparent;
+  top: 8px;
+  right: 8px;
+  border-radius: 100%;
+  width: 1.25rem;
+  height: 1.25rem;
+  background-color: #c60820;
+  border-color: transparent;
+}
+
+.controls {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.controls > input {
+  margin-bottom: 20px;
+}
+
+.submit-btn {
+  transition: all ease 0.2s;
+  background-color: #f6f6f8;
+  border-width: 0;
+  border-radius: 20px;
+  cursor: pointer;
+  padding: 10px 60px;
+
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  color: #c60820;
+  margin-top: 60px;
+}
+
+.submit-btn:hover {
+  background-color: #c60820;
+  color: #f6f6f8;
+}
