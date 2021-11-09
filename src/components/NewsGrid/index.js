@@ -26,7 +26,6 @@ const NewsGrid = ({ section, viewTrigger }) => {
 
     if (newsCollection.length === 0)
       setMessage("No articles on this section yet");
-    console.log(pageInfo);
   }, [section, pageNumber]);
 
   return (
@@ -36,14 +35,14 @@ const NewsGrid = ({ section, viewTrigger }) => {
           onClick={() => {
             if (!pageInfo.first) setPageNumber(pageNumber - 1);
           }}
-          className={`arrows arrowL ${pageInfo.first && "blocked"}`}
+          className={`arrows arrowL ${pageInfo && pageInfo.first && "blocked"}`}
           style=""
         />
         <EntypoChevronRight
           onClick={() => {
             if (!pageInfo.last) setPageNumber(pageNumber + 1);
           }}
-          className={`arrows arrowR ${pageInfo.last && "blocked"}`}
+          className={`arrows arrowR ${pageInfo && pageInfo.last && "blocked"}`}
           style=""
         />
       </div>

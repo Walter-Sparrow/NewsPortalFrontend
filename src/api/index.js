@@ -17,7 +17,7 @@ class API {
         return response.json();
       })
       .catch((e) => {
-        throw new Error(e.message);
+        return e.message;
       });
   }
 
