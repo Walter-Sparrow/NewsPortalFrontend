@@ -6,7 +6,10 @@ import API from "./api";
 const api = new API();
 
 const App = () => {
-  const [clickedSection, setClickedSection] = useState({});
+  const [clickedSection, setClickedSection] = useState({
+    id: 0,
+    name: "all",
+  });
   const [sections, setSections] = useState([]);
   const [addPopUpTrigger, setAddPopUpTrigger] = useState({
     isActive: false,
@@ -24,7 +27,6 @@ const App = () => {
         },
         ...content,
       ]);
-      setClickedSection(content[0]);
     });
   }, []);
 
