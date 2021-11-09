@@ -1,13 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #e3e3e3;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.container {
+  width: 90vw;
+  margin: 0 auto;
+  margin-top: 2rem;
+  max-width: 1270px;
+}
+
+.header > h1 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 48px;
+}
+
+.sectionsWrapper {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin: 60px 0;
+  flex-direction: row;
+}
+
+.section,
+.add-btn {
+  transition: all ease 0.2s;
+  background-color: #f6f6f8;
+  border-width: 0;
+  width: 200px;
+  height: 65px;
+  margin-right: 25px;
+  border-radius: 40px;
+  cursor: pointer;
+  padding: 0 20px;
+
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  color: #c60820;
+}
+
+.add-btn {
+  border-radius: 20px;
+}
+
+.section:hover,
+.add-btn:hover {
+  background-color: #c60820;
+  color: #f6f6f8;
+}
+
+.section.selected {
+  background-color: #c60820;
+  color: #f6f6f8;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5px;
 }
