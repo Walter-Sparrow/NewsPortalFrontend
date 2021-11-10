@@ -2,12 +2,11 @@
 
 ## Available Scripts
 
-In the project directory, you can run:
+In the project directory, you need to run:
 
-### `npm start`
+1. `npm install`
+Install NPM Dependencies
 
-Runs the app in the development mode.\
+2. `npm start`
+Runs the app in the development mode.
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
