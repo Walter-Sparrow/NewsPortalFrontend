@@ -28,6 +28,10 @@ const NewsGrid = ({ section, viewTrigger }) => {
       setMessage("No articles on this section yet");
   }, [section, pageNumber]);
 
+  useEffect(() => {
+    setPageNumber(0);
+  }, [section]);
+
   return (
     <>
       <div className="controls">
